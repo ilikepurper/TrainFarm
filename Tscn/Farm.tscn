@@ -10,7 +10,7 @@
 [ext_resource path="res://Ground tiles/New Piskel-1.png (1).png" type="Texture" id=8]
 [ext_resource path="res://Ground tiles/New Piskel (3).png" type="Texture" id=9]
 [ext_resource path="res://Scripts/Farm.gd" type="Script" id=10]
-[ext_resource path="res://Tscn/FishingMiniGame.tscn" type="PackedScene" id=11]
+[ext_resource path="res://FishingArea.tscn" type="PackedScene" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "New Piskel (6).png 0"
@@ -204,7 +204,7 @@ tile_data = PoolIntArray( -524294, 0, 0, -524293, 0, 0, -524292, 0, 0, -524291, 
 [node name="Wheat" type="YSort" parent="."]
 
 [node name="player" parent="." instance=ExtResource( 7 )]
-position = Vector2( 109, 59 )
+position = Vector2( 208, -17 )
 
 [node name="TrainTracks" type="TileMap" parent="."]
 tile_set = SubResource( 7 )
@@ -224,4 +224,8 @@ scale = Vector2( 0.996097, 0.8259 )
 polygon = PoolVector2Array( -31.1628, 58.5229, -31.1628, -116.746, 31.9605, -115.511, 32.9624, 62.2257 )
 
 [node name="FishingArea" parent="." instance=ExtResource( 11 )]
-position = Vector2( -47, -49 )
+position = Vector2( -93, -95 )
+
+[connection signal="area_entered" from="FishingArea" to="player" method="_on_FishingArea_area_entered"]
+[connection signal="body_exited" from="FishingArea" to="player" method="_on_FishingArea_body_exited"]
+[connection signal="body_shape_entered" from="FishingArea" to="player" method="_on_FishingArea_body_shape_entered"]

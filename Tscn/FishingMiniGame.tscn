@@ -3,8 +3,8 @@
 [ext_resource path="res://Tscn/Area2D.gd" type="Script" id=1]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 52.0
-height = 74.0
+radius = 43.0
+height = 48.0
 
 [node name="FishingArea" type="Node2D"]
 
