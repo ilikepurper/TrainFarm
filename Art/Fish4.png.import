@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/New Piskel.png-e7abdf0782ae430b459d1776fc5ec800.stex"
+path="res://.import/Fish4.png-35770c9bdefbaa18712fa12408d1ef7e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/New Piskel.png"
-dest_files=[ "res://.import/New Piskel.png-e7abdf0782ae430b459d1776fc5ec800.stex" ]
+source_file="res://Art/Fish4.png"
+dest_files=[ "res://.import/Fish4.png-35770c9bdefbaa18712fa12408d1ef7e.stex" ]
 
 [params]
 
